@@ -76,7 +76,7 @@ MultiNMF requires a few arguments to specify the input files and hyperparameters
 | -HMRF_tolerance         | float | Tolerance threshold for HMRF | 1e-20 |
 | -HMRF_init              | int |Number of initializations for HMRF | 10000 |
 
-## Run MultiNMF Pipeline
+### Run MultiNMF Command
 ```
 # Example Command Line prompt
 python3 run_MultiNMF.py --view_files expression.txt --view_types expr --cell_coordinates coordinates.txt --cell_names barcodes.txt --image_file morph.tif --scale_factor 71 --output_dir ./Results --view_weights 0.01 0.01 --K 20 --k 10 --k_init 1000 --normalize True
@@ -108,5 +108,5 @@ All outputs can be found in output directory. Outputs include a folder containin
 **│   ├── Visualized_Components**<br>
 │   │   ├── Round x <br>
 
-# Installation and Usage for MultiNMF
+## Installation and Usage for MultiNMF
 check: https://github.com/WilliamZBowie/MultiNMF/wiki
