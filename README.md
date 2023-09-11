@@ -32,6 +32,7 @@ cd MultiNMF  # the directory of the cloned repository
 pip install -e .
 ```
 
+
 ### Step 1: Preparing input files
 
 All files for one run of MultiNMF must be reference correctly at runtime. For each sample of `N` cells and `G` genes, the following three files stored as tab-delimited txt format are required for MultiNMF. Example inputs can be found under the Data file:
@@ -40,6 +41,8 @@ All files for one run of MultiNMF must be reference correctly at runtime. For ea
 - `barcodes.txt`, a one collumn text file which represents a list of cell/spot identifiers no headers and in the same order as the row order of the expression.txt matrix.
 - `morphology.tiff`, a image file of the respect capture area for the sample being anaylsized. Higher resolution leads to better results. 
 - `barcodes.txt`, a two collumn text file which represents a list of cell/spot coordinates as x and y integer values with no headers and in the same order as the row order of the expression.txt matrix. Note the coordinates must align to pixels in the morphology image and have the correct 1 to 1 scale. 
+
+
 
 ### Step 2: Running MultiNMF
 #### Running MultiNMF from command line
@@ -75,6 +78,8 @@ MultiNMF requires a few arguments to specify the input files and hyperparameters
 | -beta_range             | float | 'Specify range of number of rounds and increment values to be used for HMRF (start,end,step)| [0,10,0.5] |
 | -HMRF_tolerance         | float | Tolerance threshold for HMRF | 1e-20 |
 | -HMRF_init              | int |Number of initializations for HMRF | 10000 |
+
+
 
 ### Run MultiNMF Command
 ```
