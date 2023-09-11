@@ -69,9 +69,32 @@ MultiNMF requires a few arguments to specify the input files and hyperparameters
 | -HMRF_tolerance         | float | Tolerance threshold for HMRF | 1e-20 |
 | -HMRF_init              | int |Number of initializations for HMRF | 10000 |
 
-#### Outputs
+### Outputs
 
 All outputs can be found in output directory. Outputs include a folder containing image crops created from morphology image and used for analysis and an example png showing how coordinates align to original image. The vectorized morphology matrix generated from image crops using AlexNet. The factorized component matrices generated from MultiNMF labeled and MultiNMF_outs. Cluster labels produced from kmeans as well as a visualization using imputed coordinates. And finally a folder with the MultiNMF components individually visualized. 
+
+**MultiNMF_outs.npy:** File containing NMF factors and weights in matrix form for indivdual views and one joined consensus view <br>
+**Morphology.npy:** Vectorized morphology matrix generated from image crops using AlexNet <br>
+**Rank_Matrix.npy**: Rank matrix generated during HMRF <br>
+**cluster_labels.txt**: Final Cluster labels returned in same order as barcodes.txt <br>
+**image_crops_sample_coordinates.png**: An example png showing how coordinates align to original image <br>
+**MultiNMF_Clusters.png**: Visualization of clustering labels overlaid on spatial coordinates <br>
+
+#### Output Directory Structure
+├─ **OUTDIR** <br>
+│   ├──MultiNMF_outputs.npy<br>
+│   ├──Morphology.npy.png<br>
+│   ├──Rank_Matrix.npy<br>
+│   ├──cluster_labels.txt<br>
+│   ├──image_crops_sample_coordinates.png<br>
+│   ├──MultiNMF_Clusters.png<br>
+**│   ├── image_crops**<br>
+│   │   ├──*barcode.png<br>
+***│   │   ├── features***<br>
+│   │   │   ├──*barcode.npy<br>
+**│   ├── Visualized_Components**<br>
+│   │   ├── Round x <br>
+
 
 ## Install MultiNMF
 ```
