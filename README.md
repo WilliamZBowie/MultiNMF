@@ -1,4 +1,4 @@
-# Overview of NMF
+# Overview of MultiNMF
 
 ![overview](./workflow_draft_v3.png)
 
@@ -70,6 +70,7 @@ MultiNMF requires a few arguments to specify the input files and hyperparameters
 | -HMRF_init              | int |Number of initializations for HMRF | 10000 |
 
 #### Outputs
+
 All outputs can be found in output directory. Outputs include a folder containing image crops created from morphology image and used for analysis and an example png showing how coordinates align to original image. The vectorized morphology matrix generated from image crops using AlexNet. The factorized component matrices generated from MultiNMF labeled and MultiNMF_outs. Cluster labels produced from kmeans as well as a visualization using imputed coordinates. And finally a folder with the MultiNMF components individually visualized. 
 
 ## Install MultiNMF
@@ -78,5 +79,5 @@ git clone https://github.com/WilliamZBowie/MultiNMF.git
 cd MultiNMF  # the directory of the cloned repository
 pip install -e .
 ```
-# Installation and Usage for Xeomake
+# Installation and Usage for MultiNMF
 check: https://github.com/WilliamZBowie/MultiNMF/wiki
