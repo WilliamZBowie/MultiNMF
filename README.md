@@ -2,7 +2,7 @@
 
 ![overview](./workflow_draft_v3.png)
 
-MultiNMF is a multi-modality clustering algorithm which leverages a probabilistic latent variable model to find lower dimensional factorization of inputted data that produce a common consensus between clustering solutions across multiple views. The utility of MultiNMF allows the simultaneous analysis of spatial transcriptomic expression and morphological data, with the possibility to expand analysis to additional modalities of data.
+MultiNMF is a multi-modality clustering algorithm which leverages a probabilistic latent variable model to find lower dimensional factorizations of inputted data that produces a common consensus between clustering solutions across multiple views. The utility of MultiNMF allows the simultaneous analysis of spatial transcriptomic expression and morphological data, with the possibility to expand analysis to additional modalities of data.
 
 MulitNMF can be applied to any type of spatial transcriptomics data, including MERFISH, seqFISH, and Visium, and other spatial omics data.
 
