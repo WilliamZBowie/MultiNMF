@@ -31,7 +31,7 @@ git clone https://github.com/WilliamZBowie/MultiNMF.git
 cd MultiNMF  # the directory of the cloned repository
 pip install -e .
 ```
-
+ </br>
 
 ### Step 1: Preparing input files
 
@@ -40,10 +40,9 @@ All files for one run of MultiNMF must be reference correctly at runtime. For ea
 - `expression.txt`, an `N`-by-`G` nonnegative-valued matrix of normalized single-cell expression profiles. This expression matrix must be appropiately preprocessed and normalized.
 - `barcodes.txt`, a one collumn text file which represents a list of cell/spot identifiers no headers and in the same order as the row order of the expression.txt matrix.
 - `morphology.tiff`, a image file of the respect capture area for the sample being anaylsized. Higher resolution leads to better results. 
-- `barcodes.txt`, a two collumn text file which represents a list of cell/spot coordinates as x and y integer values with no headers and in the same order as the row order of the expression.txt matrix. Note the coordinates must align to pixels in the morphology image and have the correct 1 to 1 scale. 
-
-
-
+- `barcodes.txt`, a two collumn text file which represents a list of cell/spot coordinates as x and y integer values with no headers and in the same order as the row order of the expression.txt matrix. Note the coordinates must align to pixels in the morphology image and have the correct 1 to 1 scale.  </br>
+ </br>
+ 
 ### Step 2: Running MultiNMF
 #### Running MultiNMF from command line
 
@@ -79,7 +78,7 @@ MultiNMF requires a few arguments to specify the input files and hyperparameters
 | -HMRF_tolerance         | float | Tolerance threshold for HMRF | 1e-20 |
 | -HMRF_init              | int |Number of initializations for HMRF | 10000 |
 
-
+ </br>
 
 ### Run MultiNMF Command
 ```
