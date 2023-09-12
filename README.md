@@ -35,7 +35,8 @@ pip install -e .
 
 ### Step 1: Preparing input files
 
-All files for one run of MultiNMF must be reference correctly at runtime. For each sample of `N` cells and `G` genes, the following three files stored as tab-delimited txt format are required for MultiNMF. Example inputs can be found under the Data file:
+All files for one run of MultiNMF must be reference correctly at runtime. For each sample of `N` cells and `G` genes, the following three files stored as tab-delimited txt format are required for MultiNMF. Example inputs can be found in the folder of this repository labeled "Data":
+![Example Files](./Data)
 
 - `expression.txt`, an `N`-by-`G` nonnegative-valued matrix of normalized single-cell expression profiles. This expression matrix must be appropiately preprocessed and normalized.
 - `barcodes.txt`, a one collumn text file which represents a list of cell/spot identifiers no headers and in the same order as the row order of the expression.txt matrix.
