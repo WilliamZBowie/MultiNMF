@@ -111,7 +111,8 @@ All outputs can be found in output directory. Outputs include a folder containin
 ***│   │   ├── features***<br>
 │   │   │   ├──*barcode.npy<br>
 **│   ├── Visualized_Components**<br>
-│   │   ├── Round x <br>
+│   │   ├── Round {x} <br>
+│   │   │   ├──MultiNMF_Components-Round{x}.png<br>
 
 ## Installation and Usage for MultiNMF
 check: https://github.com/WilliamZBowie/MultiNMF/wiki
